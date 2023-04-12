@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.splash.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <argument
+            android:name="periyot"
+            app:argType="string" />
+        <action
+            android:id="@+id/ilanDetayGecis"
+            app:destination="@id/ilanDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.splash.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.splash.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ilanDetayFragment"
+        android:name="com.example.splash.ilanDetayFragment"
+        android:label="fragment_ilan_detay"
+        tools:layout="@layout/fragment_ilan_detay" >
+        <action
+            android:id="@+id/action_ilanDetayFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="baslik"
+            app:argType="string" />
+        <argument
+            android:name="kirafiyati"
+            app:argType="integer" />
+        <argument
+            android:name="periyot"
+            app:argType="string" />
+        <argument
+            android:name="cities"
+            app:argType="string" />
+        <argument
+            android:name="districts"
+            app:argType="string" />
+        <argument
+            android:name="quarters"
+            app:argType="string" />
+        <argument
+            android:name="towns"
+            app:argType="string" />
+        <argument
+            android:name="aciklama"
+            app:argType="string" />
+        <argument
+            android:name="foto"
+            app:argType="integer" />
+    </fragment>
+</navigation>

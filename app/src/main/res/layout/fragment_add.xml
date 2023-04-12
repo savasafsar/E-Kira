@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="379dp"
+        android:layout_height="587dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="13dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/selectImage"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/select"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/commentHeader"
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:ems="10"
+                android:hint="İlan Başlığı Giriniz :"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/commentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:lines="6"
+                android:scrollbars="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:ems="10"
+                android:hint="İlan Açıklaması Giriniz :"
+                android:inputType="textMultiLine"
+                />
+
+            <EditText
+                android:id="@+id/kiraFiyati"
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:ems="10"
+                android:hint="Kira Bedelinizi Giriniz :"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/periyotSpinner"
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selectImage" />
+
+            <Spinner
+                android:id="@+id/cities"
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selectImage" />
+
+            <Spinner
+                android:id="@+id/towns"
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cities" />
+
+            <Spinner
+                android:id="@+id/districts"
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/towns" />
+
+            <Spinner
+                android:id="@+id/quarters"
+                android:layout_width="350dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/districts" />
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="1dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginBottom="28dp"
+                android:gravity="center"
+                android:text="Gönder"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

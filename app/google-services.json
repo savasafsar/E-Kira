@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "422630177694",
+    "project_id": "ekira-b9d5d",
+    "storage_bucket": "ekira-b9d5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422630177694:android:add2d6d7cb8d31d1cb348f",
+        "android_client_info": {
+          "package_name": "com.example.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422630177694-001e7kon0780nkelv05sgb4m7aah4cp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSHmsM3dNSBDyIBqPw-CMHOGIcvpcsZ-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422630177694-001e7kon0780nkelv05sgb4m7aah4cp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
