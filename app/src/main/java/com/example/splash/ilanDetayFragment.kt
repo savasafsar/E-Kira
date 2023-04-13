@@ -64,8 +64,7 @@ class ilanDetayFragment : Fragment() {
         binding.gelenmahalleikitextView.text = gelenTowns
         val gelenAciklama = bundle.aciklama
         binding.gelenaciklamatextView.text = gelenAciklama
-        val gelenFoto = bundle.foto
-        println(gelenFoto)
+
        // binding.ilanDetayimage.setImageURI()
 
 

@@ -36,9 +36,8 @@ class RecyclerViewAdapter(private val adventList: ArrayList<Advent>) : RecyclerV
              adventList.get(position).Kirafiyati.toInt(),adventList.get(position).Periyot,
              adventList.get(position).cities,adventList.get(position).districts,
              adventList.get(position).quarters,
-             adventList.get(position).towns,adventList.get(position).Aciklama,
-             Picasso.get().load(adventList.get(position).downloadUrl).into(holder.binding.ilanGorseli)
-             )
+             adventList.get(position).towns,adventList.get(position).Aciklama)
+
             Navigation.findNavController(it).navigate(gecis)
 
 

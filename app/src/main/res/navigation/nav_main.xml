@@ -66,8 +66,5 @@
         <argument
             android:name="aciklama"
             app:argType="string" />
-        <argument
-            android:name="foto"
-            app:argType="integer" />
     </fragment>
 </navigation>
