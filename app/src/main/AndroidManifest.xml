@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/splashScreenTheme">
         <activity
+            android:name=".odemeEkrani"
+            android:exported="false" />
+        <activity
             android:name=".ilanDetayActivity"
             android:exported="false" />
         <activity
@@ -44,6 +47,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
     </application>
 
 </manifest>
